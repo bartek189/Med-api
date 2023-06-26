@@ -9,7 +9,7 @@ import pl.kurs.model.entity.Patient;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2023-06-19T23:55:07+0200",
+    date = "2023-06-26T19:02:58+0200",
     comments = "version: 1.5.3.Final, compiler: javac, environment: Java 17.0.6 (Azul Systems, Inc.)"
 )
 @Component

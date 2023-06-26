@@ -8,7 +8,6 @@ import pl.kurs.model.command.AcceptVisitCommand;
 import pl.kurs.model.command.CreateVisitCommand;
 import pl.kurs.model.dto.VisitDto;
 import pl.kurs.model.entity.Visit;
-import pl.kurs.service.StringUtils;
 import pl.kurs.service.VisitService;
 
 import javax.validation.Valid;
