@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+Test set: pl.kurs.controller.PatientControllerTest
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 9, Errors: 0, Skipped: 0, Time elapsed: 0.144 s <<< FAILURE! - in pl.kurs.controller.PatientControllerTest
+shouldGetAll  Time elapsed: 0.007 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<401>
+	at pl.kurs.controller.PatientControllerTest.shouldGetAll(PatientControllerTest.java:74)
+
+shouldGetPatientById  Time elapsed: 0.029 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<401>
+	at pl.kurs.controller.PatientControllerTest.shouldGetPatientById(PatientControllerTest.java:95)
+
+shouldSaveNewPatient  Time elapsed: 0.024 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<201> but was:<401>
+	at pl.kurs.controller.PatientControllerTest.shouldSaveNewPatient(PatientControllerTest.java:54)
+
+shouldFailValidationCreatePatient{CreatePatientCommand}[1]  Time elapsed: 0.011 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<400> but was:<401>
+	at pl.kurs.controller.PatientControllerTest.shouldFailValidationCreatePatient(PatientControllerTest.java:151)
+
+shouldFailValidationCreatePatient{CreatePatientCommand}[2]  Time elapsed: 0.009 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<400> but was:<401>
+	at pl.kurs.controller.PatientControllerTest.shouldFailValidationCreatePatient(PatientControllerTest.java:151)
+
+shouldFailValidationCreatePatient{CreatePatientCommand}[3]  Time elapsed: 0.009 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<400> but was:<401>
+	at pl.kurs.controller.PatientControllerTest.shouldFailValidationCreatePatient(PatientControllerTest.java:151)
+
+shouldFailValidationCreatePatient{CreatePatientCommand}[4]  Time elapsed: 0.011 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<400> but was:<401>
+	at pl.kurs.controller.PatientControllerTest.shouldFailValidationCreatePatient(PatientControllerTest.java:151)
+
+shouldEditPatient  Time elapsed: 0.014 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<401>
+	at pl.kurs.controller.PatientControllerTest.shouldEditPatient(PatientControllerTest.java:130)
+
+shouldRemovePatientById  Time elapsed: 0.013 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<204> but was:<401>
+	at pl.kurs.controller.PatientControllerTest.shouldRemovePatientById(PatientControllerTest.java:115)
+

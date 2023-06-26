@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: pl.kurs.controller.VisitControllerTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 0.154 s <<< FAILURE! - in pl.kurs.controller.VisitControllerTest
+shouldFailValidation{CreateVisitCommand}[1]  Time elapsed: 0.045 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<400> but was:<401>
+	at pl.kurs.controller.VisitControllerTest.shouldFailValidation(VisitControllerTest.java:110)
+
+shouldFailValidation{CreateVisitCommand}[2]  Time elapsed: 0.018 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<400> but was:<401>
+	at pl.kurs.controller.VisitControllerTest.shouldFailValidation(VisitControllerTest.java:110)
+
+shouldFailValidation{CreateVisitCommand}[3]  Time elapsed: 0.016 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<400> but was:<401>
+	at pl.kurs.controller.VisitControllerTest.shouldFailValidation(VisitControllerTest.java:110)
+
+shouldSaveVisit  Time elapsed: 0.018 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<201> but was:<401>
+	at pl.kurs.controller.VisitControllerTest.shouldSaveVisit(VisitControllerTest.java:68)
+
+shouldAcceptVisit  Time elapsed: 0.04 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<401>
+	at pl.kurs.controller.VisitControllerTest.shouldAcceptVisit(VisitControllerTest.java:90)
+

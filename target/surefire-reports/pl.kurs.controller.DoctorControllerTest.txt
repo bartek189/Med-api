@@ -1,0 +1,48 @@
+-------------------------------------------------------------------------------
+Test set: pl.kurs.controller.DoctorControllerTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 6, Errors: 2, Skipped: 0, Time elapsed: 19.694 s <<< FAILURE! - in pl.kurs.controller.DoctorControllerTest
+shouldFailValidation{CreateDoctorCommand}[1]  Time elapsed: 0.019 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: 
+Baza danych może być już otwarta: "C:/Users/bartek/test-api.mv.db"
+Database may be already in use: "C:/Users/bartek/test-api.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-214]
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/bartek/test-api.mv.db [2.1.214/7]
+
+shouldFailValidation{CreateDoctorCommand}[2]  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: 
+Baza danych może być już otwarta: "C:/Users/bartek/test-api.mv.db"
+Database may be already in use: "C:/Users/bartek/test-api.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-214]
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/bartek/test-api.mv.db [2.1.214/7]
+
+shouldFailValidation{CreateDoctorCommand}[3]  Time elapsed: 0.66 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<400> but was:<401>
+	at pl.kurs.controller.DoctorControllerTest.shouldFailValidation(DoctorControllerTest.java:148)
+
+shouldGetAll  Time elapsed: 0.088 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<401>
+	at pl.kurs.controller.DoctorControllerTest.shouldGetAll(DoctorControllerTest.java:73)
+
+shouldSaveDoctor  Time elapsed: 0.06 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<201> but was:<401>
+	at pl.kurs.controller.DoctorControllerTest.shouldSaveDoctor(DoctorControllerTest.java:54)
+
+shouldRemoveById  Time elapsed: 0.015 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<204> but was:<401>
+	at pl.kurs.controller.DoctorControllerTest.shouldRemoveById(DoctorControllerTest.java:112)
+
+shouldEditDoctor  Time elapsed: 0.014 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<401>
+	at pl.kurs.controller.DoctorControllerTest.shouldEditDoctor(DoctorControllerTest.java:129)
+
+shouldGetDoctorBYId  Time elapsed: 0.016 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<401>
+	at pl.kurs.controller.DoctorControllerTest.shouldGetDoctorBYId(DoctorControllerTest.java:94)
+
